@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Sum, Square Root, and Array Example</h1>
+  <form id="numberForm">
+    <label for="number">Enter a number:</label>
+    <input id="numberInput">
+    <input type="submit" value="Calculate">
+  </form>
+
+  <div class="resultContainer"></div>
+
+  <script>
+    document.getElementById("numberForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      const number = parseInt(document.getElementById("numberInput").value);
+      const resultContainer = document.querySelector(".resultContainer");
+
+      let sum = 0;
+      for (let i = 1; i <= number; i++) {
+        sum += i;
+      }
+
+      const sqrtValue = Math.sqrt(number);
+
+      let multiplesOfThree = [];
+      for (let i = 3; i < number; i += 3) {
+        multiplesOfThree.push(i);
+      }
+
+      document.querySelector(".resultContainer").textContent = `The sum of numbers from 1 to ${number} is ${sum}.';
+      document.querySelector(".resultContainer").textContent =  'The square root of ${number} is ${sqrtValue}';
+      document.querySelector(".resultContainer").textContent =  'Multiples of 3 less than ${number}: ${multiplesOfThree.join(", ")}`;
+    });
+    
+    /*
+    resultContainer.innerHTML = "The sum of numbers from 1 to " + number + " is " + sum + "<br><br>" +
+                                   "The square root of " + number + " is " + sqrtValue + "<br><br>" +
+                                   "Multiples of 3 less than " + number + ": " + multiplesOfThree.join(", ");
+                                   */
+  </script>
+</body>
+</html>

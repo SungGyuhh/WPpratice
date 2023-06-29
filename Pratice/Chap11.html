@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+      .box {
+      width: 100px;
+      height: 100px;
+      margin: 60px auto;      
+      animation: rotate 2s linear infinite; background-color: red;
+      
+    }
+    @keyframes rotate {  /* 0도 -> x축 -180도 회전 -> y축 -180도 회전 */
+      from { transform:  rotateZ(0deg) ; }
+     
+      to { transform:  rotateZ(360deg) ; }
+    }
+    .touch{
+      width:130px;
+      height:50px;
+      margin:5px 10px;
+      padding:5px;
+			text-align: center;
+			line-height: 50px;
+    	color: white;
+      background-color: skyblue;
+      border-radius: 8%;
+      animation: shape 1s infinite alternate;
+    }
+    .touch:hover{
+        background-color: red;
+    }
+		@keyframes shape {
+			from {transform : scale(1.1);}
+		}
+		
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="touch">HOVER 한성규</div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Pseudo-class</title>
+    <style>
+    .box{
+        background-color: yellow;
+        width: 300px;
+        margin: auto;
+        padding: 20px;
+        font-size: 40px;
+        text-align: justify;
+    }
+ 
+    .box:active{
+        background-color: orange;
+    }
+ 
+    h1, h2{
+        color: green;
+        text-align: center;
+    }
+
+    form{
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 2rem;
+    }
+        
+    label{
+        width: 30%;
+    }
+        
+    input{
+        background-color: white;
+        float: right;
+    }
+        
+    input:focus{
+        background-color: gray;
+    }
+
+    a:visited{
+        color: green;
+    }
+    
+    .z{
+          color:Red;
+          font-weight: bold;
+      }
+    </style>
+</head>
+ 
+<body>
+    <h1>CSS Pseudo-class</h1>
+    <h2>: 한성규</h2>
+    <div class="box">
+        클릭하면 배경색이 오렌지로 바뀝니다!
+    </div>
+    <br>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" name="username"
+               placeholder="Gray when focused" />
+        <br>
+    </form>
+
+    
+    <a href="https://ssu.ac.kr/" target="_blank">
+        학교 홈페이지를 방문하면 초록색으로!
+    </a>
+
+
+    <p><span class="z">첫</span>번째 문자만 빨강색으로 하세요</p>
+
+    
+        
+
+</body>
+</html>

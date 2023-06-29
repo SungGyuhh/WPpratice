@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        #grid{
+            display: grid;
+            grid-template-rows: repeat(3,70px);
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas:
+            "box1 box2 box5"
+            "box1 box4 box6"
+            "box3 box4 box7";
+        }
+        
+        .box{
+        padding:15px;
+        color:#fff;
+        font-weight:bold;
+        text-align:center;
+        margin: 5px;
+      }  
+        .box1{background-color: pink ;
+        grid-area:box1 ;}
+
+        .box2{background-color: skyblue ;
+            grid-area:box2 ;}
+        
+        .box3{background-color:yellow  ;
+            grid-area:box3 ;}
+        
+        .box4{background-color: aquamarine ;
+            grid-area:box4 ;
+        }
+        .box5{background-color: orange ;
+            grid-area:box5 ;}
+        
+        .box6{background-color: blueviolet ;
+            grid-area:box6 ;}
+        
+        .box7{background-color:violet;
+            grid-area:box7 ;}
+        #another{
+            width: auto;
+            background-color: red;
+            padding: 50px;
+            color: white;
+            text-align: center;
+        }
+        @media screen and (min-width:100px) and (max-width: 500px) {
+        #another{
+            background-color: blue;
+        } 
+        }
+        @media screen and (min-width:500px) and (max-width: 900px) {
+        #another{
+            background-color: green;
+        } 
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div> 
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+      </div>
+    <div id="another">
+        한성규
+    </div>
+
+
+</body>
+</html>

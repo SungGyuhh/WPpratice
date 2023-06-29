@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm</title>
+</head>
+<body>
+  <h1>2023년 봄 웹플밍 중간고사</h1>
+  <hr>
+
+  <h2>List + Link</h2>
+  <p>My Favorite Web Development Learning Sites</p>
+  <ul>
+    <a href="https://www.freecodecamp.org/"><li>
+      <ins>freeCodeCamp</ins>
+    </li></a>
+    <a href="https://css-tricks.com/"><li>
+      <ins>CSS-Tricks</ins>
+    </li></a>
+    <a href="https://www.traversymedia.com/"><li>
+      <ins>Traversy Media</ins>
+    </li></a>
+  </ul>
+  <hr>
+
+  <h2>Image</h2>
+  <img src="https://shorturl.at/aT289" height="200">
+  <hr>
+
+  <h2>Table</h2>
+  <table border="1">
+    <tr>
+      <th rowspan="3">Day</th>      
+      <th colspan="4">Seminar</th>      
+    </tr>    
+    <tr>
+      <th colspan="2">Schedule</th> 
+      <th rowspan="2">Topic</th>
+    </tr>    
+    <tr>     
+      <th>Begin</th>      
+      <th>End</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Monday</td>
+      <td rowspan="2">8:00 a.m</td>
+      <td rowspan="2">5:00 p.m</td>
+      <td>Introduction to XML</td>
+    </tr>   
+    <tr>
+      <td>Validity: DTD and Relax NG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Tuesday</td>
+      <td>8:00 a.m</td>
+      <td>11:00 a.m</td>
+      <td>XPath</td>
+    </tr>
+    <tr>
+      <td>11:00 a.m</td>
+      <td>11:00 a.m</td>
+      <td>XSL transformation</td>
+    </tr>
+  </table>
+
+  <hr>
+  <h2>Form</h2>
+  <form>
+    <fieldset>
+      <legend>
+        Personal Information
+      </legend>
+      <label>Name<input type="name" placeholder="Type your name"></label><br><br>
+      <label>Birthday<input type="datetime" value="연도. 년. 월."></label><br>
+      <p>Kindly Select your favorite sports</p>
+      <label><input type="radio" name="field" value="Football" checked>Football</label><br>
+      <label><input type="radio" name="field" value="Baseball">Baseball</label><br>
+      <label><input type="radio" name="field" value="Badmintion">Badminton</label>
+      <br><br>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+</body>
+</html>

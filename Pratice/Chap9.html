@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html>
+<head>
+	
+	<style>
+		body {
+			background-image :url('images/bg1.jpg');
+			background-position: bottom;
+			background-repeat: repeat-x;
+			background-attachment: fixed;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.square-container {
+			display: flex;
+			flex-wrap: wrap;
+			width: 500px;
+			height: 500px;
+			background-image: linear-gradient(to bottom, white, black);
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+			padding: 20px;
+		}
+
+		.square {
+			border: none;
+            color: white;
+            text-align:center;
+            line-height: 130px;
+            font-size:50px;
+            font-weight: 700;
+            display:inline-block;
+            height: 130px;
+            margin: 15px;
+            padding: 0;
+            position: relative;
+            width: 130px;
+            text-shadow: 3px 3px 7px black;
+		}
+    #box-a {
+      background-color: pink;
+    }
+    #box-b {
+      background-color: lightgreen;
+    }
+    #box-c {
+      background-color: orange
+    }
+    #box-d{
+      background-color: purple;
+    }
+    #box-e{
+      background-color: yellow;
+    }
+	</style>
+</head>
+<body>
+	<div class="square-container">
+		<div class="square" id="box-a">A</div>
+		<div class="square" id="box-b">B</div>
+		<div class="square" id="box-c">C</div>
+		<div class="square" id="box-d">D</div>
+		<div class="square" id="box-e">E</div>
+		<div class="square" id="box-a">F</div>
+		<div class="square" id="box-b">G</div>
+		<div class="square" id="box-c">H</div>
+		<div class="square" id="box-d">I</div>
+	</div>
+</body>
+</html>
+
+</body>
+</html>
